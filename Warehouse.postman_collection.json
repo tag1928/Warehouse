@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "c597885d-7831-4d6a-93f5-e58482b4652e",
+		"name": "Warehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41988821"
+	},
+	"item": [
+		{
+			"name": "getWarehouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/warehouse/idowarehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"warehouse",
+						"idowarehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postWarehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"idowarehouse\",\r\n    \"name\":\"jamal warehouse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/warehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postWarehouse2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"zawghouse\",\r\n    \"name\":\"nigga warehouse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/warehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putWarehouse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"idowarehouse\",\r\n    \"name\":\"tyrone warehouse\",\r\n    \"shop_ids\":\r\n    [\r\n        \"asdf\",\"asdfad\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/warehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteWarehouse",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/warehouse/idowarehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"warehouse",
+						"idowarehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shop/shopify",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop",
+						"shopify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postShop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"shopify\",\r\n    \"name\":\"Spar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shop",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postShop2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"shoplift\",\r\n    \"name\":\"SevenIleven\",\r\n    \"warehouse_ids\":\r\n    [\r\n        \"idowarehouse\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shop",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putShop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"shopify\",\r\n    \"name\":\"Nigger\",\r\n    \"warehouse_ids\":\r\n    [\r\n        \"idowarehouse\",\r\n        \"zawghouse\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shop",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteShop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shop/shopify",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shop",
+						"shopify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/industrialproduce",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"industrialproduce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"industrialproduce\",\r\n    \"name\": \"super product\",\r\n    \"price\": 9.99,\r\n    \"quantity\": 70\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"industrialproduce\",\r\n    \"name\": \"nigger produce\",\r\n    \"price\": 99.01,\r\n    \"quantity\": 69,\r\n    \"shop_id\": \"shopify\",\r\n    \"warehouse_id\": \"idowarehouse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/industrialproduce",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"industrialproduce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
